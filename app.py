@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import re
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins="*", supports_credentials=False)
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; DSGVOChecker/1.0; +https://dsgvo-checker.de)"
